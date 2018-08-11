@@ -12,7 +12,7 @@
                                 <p class="item-title"><a href="{{ route('items.show', $item->id) }}">{{ $item->name }}</a></p>
                             @else
                                 <p class="item-title">{{ $item->name }}</p>
-                            @elseif
+                            @endif
                             <div class="buttons text-center">
                                 @if (Auth::check())
                                     @include('items.want_button', ['item' => $item])
